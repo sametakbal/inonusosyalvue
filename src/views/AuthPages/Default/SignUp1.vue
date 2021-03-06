@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1 class="mb-0">Sign Up</h1>
-    <p>Enter your email address and password to access admin panel.</p>
+    <h1 class="mb-0">Kaydol</h1>
+    <p>Bilgilerinizi girdikten sonra İnönü Sosyal'e kaydolabilirsiniz.</p>
     <form class="mt-4">
       <div class="form-group">
         <label for="exampleInputEmail1">Your Full Name</label>
@@ -18,17 +18,12 @@
       <div class="d-inline-block w-100">
         <div class="custom-control custom-checkbox d-inline-block mt-2 pt-1">
           <input type="checkbox" class="custom-control-input" id="customCheck1">
-          <label class="custom-control-label" for="customCheck1">I accept <a href="#">Terms and Conditions</a></label>
+          <label class="custom-control-label" for="customCheck1"><a href="#">Şart ve koşulları</a>  kabul ediyorum</label>
         </div>
-        <button type="submit" class="btn btn-primary float-right" @click="$router.push({name: 'social.list'})">Sign Up</button>
+        <button type="submit" class="btn btn-primary float-right" @click="$router.push({name: 'social.list'})">Kaydol</button>
       </div>
       <div class="sign-info">
-        <span class="dark-color d-inline-block line-height-2">Already Have Account ? <router-link :to="{ name: 'auth1.sign-in1'}">Log In</router-link></span>
-        <ul class="iq-social-media">
-          <li><a href="#"><i class="ri-facebook-box-line"></i></a></li>
-          <li><a href="#"><i class="ri-twitter-line"></i></a></li>
-          <li><a href="#"><i class="ri-instagram-line"></i></a></li>
-        </ul>
+        <span class="dark-color d-inline-block line-height-2">Zaten bir hesabın var mı? <router-link :to="{ name: 'auth1.sign-in1'}">Giriş Yap</router-link></span>
       </div>
     </form>
   </div>

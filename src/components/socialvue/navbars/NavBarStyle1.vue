@@ -6,7 +6,7 @@
             <div class="iq-navbar-logo d-flex justify-content-between">
               <a href="#">
                 <img :src="logo" class="img-fluid" alt="logo">
-                <span>SocialV</span>
+                <span>Sosyal</span>
               </a>
               <div class="iq-menu-bt align-self-center">
                 <div class="wrapper-menu" @click="miniSidebar">
